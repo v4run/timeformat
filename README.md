@@ -22,8 +22,8 @@ mm|04
 m|4
 ss|05
 s|5
-f|0|         .fff = .000
-F|9|         .FFF = .999
+f|0 *(.fff = .000)*
+F|9 *(.FFF = .999)*
 a|pm
 A|PM
 z|MST
