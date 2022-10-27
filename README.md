@@ -3,40 +3,41 @@
 An easy to remember time format layout for go.
 
 ## Layout
-|timeformat|default|
-----|----
-YYYY|2006
-YY|06
-MMMM|January
-MMM|Jan
-MM|01
-M|1
-DD|02
-D|2
-hh|03
-HH|15
-h|3
-wwww|Monday
-www|Mon
-mm|04
-m|4
-ss|05
-s|5
-f|0 *(.fff = .000)*
-F|9 *(.FFF = .999)*
-a|pm
-A|PM
-z|MST
--Z:Z:Z|-07:00:00
-Z:Z:Z|Z07:00:00
--Z:Z|-07:00
-Z:Z|Z07:00
--ZZZ|-070000
-ZZZ|Z070000
--ZZ|-0700
-ZZ|Z0700
--Z|-07
-Z|Z07
+
+| timeformat | default           |
+| ---------- | ----------------- |
+| YYYY       | 2006              |
+| YY         | 06                |
+| MMMM       | January           |
+| MMM        | Jan               |
+| MM         | 01                |
+| M          | 1                 |
+| DD         | 02                |
+| D          | 2                 |
+| hh         | 03                |
+| HH         | 15                |
+| h          | 3                 |
+| wwww       | Monday            |
+| www        | Mon               |
+| mm         | 04                |
+| m          | 4                 |
+| ss         | 05                |
+| s          | 5                 |
+| f          | 0 _(.fff = .000)_ |
+| F          | 9 _(.FFF = .999)_ |
+| a          | pm                |
+| A          | PM                |
+| z          | MST               |
+| -Z:Z:Z     | -07:00:00         |
+| Z:Z:Z      | Z07:00:00         |
+| -Z:Z       | -07:00            |
+| Z:Z        | Z07:00            |
+| -ZZZ       | -070000           |
+| ZZZ        | Z070000           |
+| -ZZ        | -0700             |
+| ZZ         | Z0700             |
+| -Z         | -07               |
+| Z          | Z07               |
 
 ## Example 1
 
@@ -57,7 +58,8 @@ func main() {
 ```
 
 #### Output
-```Sun Jan 1 00:00:00 +0000 UTC 2017```
+
+`Sun Jan 1 00:00:00 +0000 UTC 2017`
 
 ## Example 2
 
@@ -76,4 +78,11 @@ func main() {
 ```
 
 #### Output
-```Mon Jan 2 15:04:05 -0700 MST 2006```
+
+`Mon Jan 2 15:04:05 -0700 MST 2006`
+
+## Installation
+
+```
+go install github.com/v4run/timeformat/cmd/gotimeformat@latest
+```
